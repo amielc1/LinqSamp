@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using LinqSamp;
 namespace LinqSampTest
 {
     [TestClass]
@@ -9,6 +9,9 @@ namespace LinqSampTest
         [TestMethod]
         public void TestMethod1()
         {
+            var repo = new Repository();
+            repo.Run();
+
         }
     }
 }
